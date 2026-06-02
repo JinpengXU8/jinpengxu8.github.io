@@ -8,19 +8,19 @@ subtitle: Postdoctoral Fellow, The Hong Kong Polytechnic University
 profile:
 align: right
 image: prof_pic.jpg
-image_circular: false
+image_circular: true
 more_info: > <p>The Hong Kong Polytechnic University</p> <p>Hong Kong SAR, China</p> <p>Email: [jinpeng.xu@polyu.edu.hk](mailto:jinpeng.xu@polyu.edu.hk)</p>
 
-selected_papers: false
-social: false
+selected_papers: true
+social: true
 
 announcements:
-enabled: false
+enabled: true
 scrollable: true
 limit: 5
 
 latest_posts:
-enabled: false
+enabled: true
 scrollable: true
 limit: 3
 --------
