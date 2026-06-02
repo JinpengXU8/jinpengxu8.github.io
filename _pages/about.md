@@ -27,25 +27,17 @@ latest_posts:
   limit: 3
 ---
 
-I am a Postdoctoral Fellow at The Hong Kong Polytechnic University. My research focuses on reliable, secure, and intelligent wireless networks, with particular interests in MIMO ad hoc networks, UAV and low-altitude wireless networks, integrated sensing and communication (ISAC), physical-layer security, and 6G space-air-ground integrated networks.
+I am Jinpeng Xu, a Postdoctoral Fellow at The Hong Kong Polytechnic University. I received my Ph.D. degree from Beihang University (BUAA) in January 2025, under the supervision of Prof. Lin Bai and Prof. Lin Zhou. During my doctoral studies, I was also fortunate to receive advice and mentorship from Prof. Xiang Cheng at Peking University.
 
-My work combines theoretical modeling, signal processing, optimization, and system-oriented design and validation. I have experience in MATLAB/Simulink-based prototyping, SDR/FPGA-based baseband verification, and outdoor multi-node field experiments.
+My research focuses on developing efficient, robust, secure, and intelligent wireless communication networks. I work on key theoretical and technical problems in channel modeling, beamforming, signal processing and optimization, physical-layer security, and integrated sensing and communication. My research is closely related to MIMO ad hoc networks, UAV/low-altitude wireless networks, and space-air-ground integrated networks.
+My work combines theoretical modeling, simulation, algorithm design, and system-oriented validation, with experience in USRP/SDR-based prototyping, ARM/FPGA-based implementation, and real-world field testing.
 
 ## Research Interests
 
-- MIMO ad hoc networks and self-organizing wireless systems
-- UAV and low-altitude wireless networks
+- Channel modeling, signal processing, beamforming, and optimization
 - Integrated sensing and communication (ISAC)
-- Physical-layer security and covert communications
-- 6G space-air-ground integrated networks
-- Signal processing, beamforming, resource allocation, and optimization
-
-## Selected Project
-
-I have been involved in the research and development of MIMO ad hoc networking systems, covering physical-layer frame and waveform design, transmit/receive beamforming, MAC and link-layer mechanisms, topology-aware routing, simulation platforms, SDR/FPGA verification, and outdoor field experiments.
-
-## Contact
-
-For academic inquiries, please contact me by email:
-
-**[jinpeng.xu@polyu.edu.hk](mailto:jinpeng.xu@polyu.edu.hk)**
+- Physical-layer security (PLS)
+- MIMO ad-hoc networks
+- Low-altitude wireless networks (LAWNs)
+- Space-air-ground integrated networks (SAGINs)
+- AI for networks
