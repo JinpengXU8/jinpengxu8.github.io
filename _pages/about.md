@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Postdoctoral Fellow, The Hong Kong Polytechnic University
+#subtitle: Postdoctoral Fellow, The Hong Kong Polytechnic University
 
 profile:
   align: right
