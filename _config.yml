@@ -12,7 +12,7 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Personal academic website of Jinpeng Xu, Postdoctoral Fellow at The Hong Kong Polytechnic University.
 footer_text: >
   Jinpeng Xu. Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-keywords: wireless communications, 6G, UAV networks, MIMO, ISAC, physical-layer security, Mibile ad hoc networks # add your own keywords or leave empty
+keywords: wireless communications, 6G, UAV networks, MIMO, ISAC, physical-layer security, MIMO ad hoc networks # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -339,8 +339,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Xu]
+  first_name: [Jinpeng]
 
   style: apa
   locale: en
