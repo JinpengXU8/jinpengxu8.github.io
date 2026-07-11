@@ -7,10 +7,80 @@ first_name: Jinpeng
 middle_name:
 last_name: Xu
 contact_note: |
-  For any inquiries, email is the best way to reach me.
-  <a href="https://info.flagcounter.com/JXVZ">
-  <img src="https://s01.flagcounter.com/count2/JXVZ/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_12/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0">
-  </a>
+  <style>
+    .social {
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: center;
+      align-items: center;
+      column-gap: 18px;
+      row-gap: 10px;
+    }
+
+    .social .contact-icons {
+      grid-column: 1;
+      grid-row: 1;
+      margin: 0;
+    }
+
+    .social .contact-note {
+      display: contents;
+    }
+
+    .social .visitor-counter {
+      grid-column: 2;
+      grid-row: 1;
+      display: inline-flex;
+      align-items: center;
+      line-height: 0;
+    }
+
+    .social .visitor-counter img {
+      display: block;
+      height: 58px;
+      width: auto;
+      border: 0;
+    }
+
+    .social .contact-message {
+      grid-column: 1 / -1;
+      grid-row: 2;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .social {
+        grid-template-columns: 1fr;
+      }
+
+      .social .contact-icons,
+      .social .visitor-counter,
+      .social .contact-message {
+        grid-column: 1;
+        justify-self: center;
+      }
+
+      .social .contact-icons {
+        grid-row: 1;
+      }
+
+      .social .visitor-counter {
+        grid-row: 2;
+      }
+
+      .social .contact-message {
+        grid-row: 3;
+      }
+    }
+  </style>
+
+  <span class="contact-message">
+    For any inquiries, email is the best way to reach me.
+  </span>
+
+  <span class="visitor-counter">
+    <a href="https://info.flagcounter.com/JXVZ"><img src="https://s01.flagcounter.com/count2/JXVZ/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_12/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+  </span>
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Personal academic website of Jinpeng Xu, Postdoctoral Fellow at The Hong Kong Polytechnic University.
 footer_text: >
