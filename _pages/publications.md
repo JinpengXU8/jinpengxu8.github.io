@@ -13,11 +13,11 @@ nav_order: 2
 
 <div class="publications">
 
-## Journal Papers
+<h2>Journal Papers</h2>
 
 {% bibliography --query @article %}
 
-## Conference Papers
+<h2>Conference Papers</h2>
 
 {% bibliography --query @inproceedings %}
 
