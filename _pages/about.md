@@ -6,12 +6,12 @@ permalink: /
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: Dr_JinpengXU.png
   image_circular: true
   more_info: >
-    <p>The Hong Kong Polytechnic University</p>
+    <p>The Hong Kong University of Science and Technology (HKUST)</p>
     <p>Hong Kong SAR, China</p>
-    <p>Email: <a href="mailto:jinpeng.xu@polyu.edu.hk">jinpeng.xu@polyu.edu.hk</a></p>
+    <p>Email: <a href="mailto:jpxu.phd@outlook.com">jpxu.phd@outlook.com</a></p>
 
 selected_papers: true
 social: true
