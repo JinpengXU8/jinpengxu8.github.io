@@ -52,27 +52,28 @@ The prototype devices integrate radio-frequency modules, multi-antenna transceiv
 The system was implemented using software-defined radio (SDR), ARM, and FPGA-based hardware platforms.
 
 <div class="row">
-  <div class="col-sm-6 mt-3 mt-md-0">
+  <div class="col-12 mt-3">
     {% include figure.liquid
       path="assets/img/projects/uav-mimo-ad-hoc/prototype-devices-command-terminal.png"
       title="Prototype communication devices and command-and-control terminal"
-      class="img-fluid rounded z-depth-1"
+      class="img-fluid rounded z-depth-1 w-100"
     %}
 
-    <p class="caption">
+    <p class="caption text-center">
       Prototype communication devices and command-and-control terminal.
     </p>
   </div>
 
-  <div class="col-sm-6 mt-3 mt-md-0">
+  <div class="col-12 mt-4">
     {% include figure.liquid
       path="assets/img/projects/uav-mimo-ad-hoc/uav-networking-scenario.png"
       title="UAV MIMO ad-hoc networking scenario"
-      class="img-fluid rounded z-depth-1"
+      class="img-fluid rounded z-depth-1 w-100"
     %}
 
-    <p class="caption">
-      UAV MIMO ad-hoc networking scenario with airborne nodes, ground nodes, and the command-and-control terminal.
+    <p class="caption text-center">
+      UAV MIMO ad-hoc networking scenario with airborne nodes, ground nodes,
+      and the command-and-control terminal.
     </p>
   </div>
 </div>
