@@ -10,7 +10,8 @@ related_publications: true
 
 ## Overview
 
-This project presents a low-altitude UAV MIMO ad-hoc networking system designed for infrastructure-free, self-organizing, and multi-hop wireless communications. The system integrates MIMO transmission, distributed networking, dynamic topology management, real-time signal processing, and hardware implementation.
+This project develops a low-altitude MIMO ad-hoc networking system for infrastructure-free, self-organizing, and multi-hop wireless communications. Featuring decentralized control and autonomous coordination, the system integrates MIMO transmission, dynamic topology management, opportunistic channel access, on-demand bandwidth allocation, and real-time hardware implementation.
+
 
 The project demonstrates the overall networking architecture, prototype communication devices, technical specifications, and field-test results.
 
