@@ -73,17 +73,18 @@ The system was implemented using software-defined radio (SDR), ARM, and FPGA-bas
 
 | Specification | Value |
 |---|---|
-| Operating frequency | [Operating frequency band] |
-| Channel bandwidth | [Channel bandwidth] |
-| MIMO configuration | [e.g., 2 × 2 MIMO] |
-| Measured data rate | [Measured data rate] |
-| Tested communication range | [Tested communication range] |
-| Number of networking nodes | [Number of supported nodes] |
-| Network topology | Multi-hop ad-hoc networking |
-| Baseband platform | ARM/FPGA-based platform |
-| Radio platform | SDR-based transceiver |
-| Networking capabilities | Self-organization, routing, relaying, and topology management |
-| Mobility support | Ground-mobile and UAV-mobile nodes |
+| MIMO modes | Spatial multiplexing, space–time coding, receive combining, and Tx/Rx beamforming |
+| Receiver sensitivity | −99 dBm at 5 MHz bandwidth |
+| Adaptive data rate | 1–130+ Mbps |
+| Frequency range | 1300–1430 MHz (customizable) |
+| Channel bandwidth | 1.25 / 2.5 / 5 / 10 / 20 MHz (configurable) |
+| Modulation | TD-COFDM; adaptive BPSK/QPSK/16QAM/64QAM |
+| Single-hop range | ≥100 km (LoS); 1–30 km in urban environments |
+| Transmit power | 1 mW–2 W |
+| Operation modes | P2P, P2MP, multi-hop relay, and mesh networking |
+| Single-hop latency | Average ≈3 ms at 20 MHz bandwidth |
+| Anti-jamming capabilities | Automatic/manual hopping, intelligent channel selection, and network-level mitigation |
+| Networking scale | More than 1,000 nodes |
 
 The reported technical specifications are based on prototype implementation and field measurements.
 
