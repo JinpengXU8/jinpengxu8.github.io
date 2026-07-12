@@ -54,18 +54,26 @@ The system was implemented using software-defined radio (SDR), ARM, and FPGA-bas
 <div class="row">
   <div class="col-sm-6 mt-3 mt-md-0">
     {% include figure.liquid
-      path="assets/img/projects/uav-mimo-ad-hoc/device-front.jpg"
-      title="Prototype communication device"
+      path="assets/img/projects/uav-mimo-ad-hoc/prototype-devices-command-terminal.png"
+      title="Prototype communication devices and command-and-control terminal"
       class="img-fluid rounded z-depth-1"
     %}
+
+    <p class="caption">
+      Prototype communication devices and command-and-control terminal.
+    </p>
   </div>
 
   <div class="col-sm-6 mt-3 mt-md-0">
     {% include figure.liquid
-      path="assets/img/projects/uav-mimo-ad-hoc/device-deployment.jpg"
-      title="Prototype device deployment"
+      path="assets/img/projects/uav-mimo-ad-hoc/uav-networking-scenario.png"
+      title="UAV MIMO ad-hoc networking scenario"
       class="img-fluid rounded z-depth-1"
     %}
+
+    <p class="caption">
+      UAV MIMO ad-hoc networking scenario with airborne nodes, ground nodes, and the command-and-control terminal.
+    </p>
   </div>
 </div>
 
