@@ -101,7 +101,10 @@ The reported technical specifications are based on prototype implementation and 
 
 ## 3. Field Tests and Demonstration
 
-Field experiments were conducted to evaluate network initialization, multi-node connectivity, wireless coverage, multi-hop transmission, communication reliability, and system operation under realistic deployment conditions.
+Field experiments were conducted to evaluate network initialization,
+multi-node connectivity, wireless coverage, multi-hop transmission,
+communication reliability, and system operation under realistic
+deployment conditions.
 
 {% include figure.liquid
   path="assets/img/projects/uav-mimo-ad-hoc/field-test.jpg"
@@ -109,26 +112,29 @@ Field experiments were conducted to evaluate network initialization, multi-node 
   class="img-fluid rounded z-depth-1"
 %}
 
-<p class="caption">
+<p class="caption text-center">
   Field test of the low-altitude UAV MIMO ad-hoc networking system.
 </p>
 
 ### Demonstration Video
 
-<video
-  width="100%"
-  controls
-  playsinline
-  preload="metadata"
-  poster="{{ '/assets/img/projects/uav-mimo-ad-hoc/video-cover.jpg' | relative_url }}"
->
-  <source
-    src="{{ '/assets/video/uav-mimo-ad-hoc-demo.mp4' | relative_url }}"
-    type="video/mp4"
+<div class="project-video">
+  <video
+    class="w-100 rounded z-depth-1"
+    controls
+    playsinline
+    preload="metadata"
+    poster="{{ '/assets/img/projects/uav-mimo-ad-hoc/video-cover.jpg' | relative_url }}"
   >
-  Your browser does not support the video tag.
-</video>
+    <source
+      src="{{ '/assets/video/uav-mimo-ad-hoc-demo.mp4' | relative_url }}"
+      type="video/mp4"
+    >
+    Your browser does not support the video tag.
+  </video>
 
-<p class="caption">
-  Demonstration of network establishment, multi-node connectivity, and wireless data transmission.
-</p>
+  <p class="caption text-center">
+    Demonstration of network establishment, multi-node connectivity,
+    and wireless data transmission.
+  </p>
+</div>
