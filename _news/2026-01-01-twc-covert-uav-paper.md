@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper, “Channel Inversion Power Control Aided Multi-User Secret and Covert UAV Communications,” has been accepted for publication in *IEEE Transactions on Wireless Communications*.
+Our paper, “Channel Inversion Power Control Aided Multi-User Secret and Covert UAV Communications,” has been accepted for publication in _IEEE Transactions on Wireless Communications_.
