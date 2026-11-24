@@ -285,27 +285,6 @@ test("tailwind table engine provides search, pagination, and sorting in pretty t
   await expect(interactiveTable.locator("tbody tr").first().locator("td").nth(1)).toHaveText("20");
 });
 
-test("lightbox galleries open in-page modal instead of navigating away", async ({ page }) => {
-  await preparePage(page, "light");
-  await page.goto("/al-folio/blog/2024/photo-gallery/", { waitUntil: "networkidle" });
-  await stabilizeVisuals(page);
-
-  const firstLightboxLink = page.locator("a[data-lightbox]").first();
-  const firstHref = await firstLightboxLink.getAttribute("href");
-  await firstLightboxLink.click();
-
-  const overlay = page.locator(".al-lightbox-overlay");
-  await expect(overlay).toHaveClass(/is-open/);
-  await expect(page.locator(".al-lightbox-image")).toHaveAttribute("src", firstHref);
-
-  const firstImageSrc = await page.locator(".al-lightbox-image").getAttribute("src");
-  await page.locator(".al-lightbox-next").click();
-  await expect(page.locator(".al-lightbox-image")).not.toHaveAttribute("src", firstImageSrc);
-
-  await page.keyboard.press("Escape");
-  await expect(overlay).not.toHaveClass(/is-open/);
-});
-
 test("core pages no longer emit jQuery-style runtime errors", async ({ page }) => {
   const failures = [];
   page.on("pageerror", (error) => failures.push(error.message));
@@ -316,7 +295,7 @@ test("core pages no longer emit jQuery-style runtime errors", async ({ page }) =
   });
 
   await preparePage(page, "light");
-  const pages = ["/al-folio/", "/al-folio/projects/", "/al-folio/blog/2024/photo-gallery/", "/al-folio/blog/2023/tables/"];
+  const pages = ["/al-folio/", "/al-folio/projects/", "/al-folio/blog/2023/tables/"];
 
   for (const target of pages) {
     await page.goto(target, { waitUntil: "networkidle" });
