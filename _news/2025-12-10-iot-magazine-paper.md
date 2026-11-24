@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper, “Intelligent Foundation Model-Enabled Low-Altitude FANETs: Integrating Communication, Control, Sensing, and Security,” has been accepted for publication in *IEEE Internet of Things Magazine*.
+Our paper, “Intelligent Foundation Model-Enabled Low-Altitude FANETs: Integrating Communication, Control, Sensing, and Security,” has been accepted for publication in _IEEE Internet of Things Magazine_.

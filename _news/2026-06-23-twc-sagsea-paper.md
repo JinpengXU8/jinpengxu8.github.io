@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper, “6G Space-Air-Ground-Sea Integrated Networks: Outage and Ergodic Capacity Analysis,” has been accepted for publication in *IEEE Transactions on Wireless Communications*.
+Our paper, “6G Space-Air-Ground-Sea Integrated Networks: Outage and Ergodic Capacity Analysis,” has been accepted for publication in _IEEE Transactions on Wireless Communications_.

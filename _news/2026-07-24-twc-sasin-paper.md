@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper, “6G Space-Air-Sea Integrated Networks: QoS-Aware Design and Optimization,” has been accepted for publication in *IEEE Transactions on Wireless Communications*.
+Our paper, “6G Space-Air-Sea Integrated Networks: QoS-Aware Design and Optimization,” has been accepted for publication in _IEEE Transactions on Wireless Communications_.
