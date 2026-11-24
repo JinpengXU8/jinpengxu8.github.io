@@ -7,6 +7,7 @@ on:
       - "_config.yml"
       - "_data/**"
       - "_bibliography/**"
+      - "_news/**"
       - "_pages/**"
       - "_posts/**"
       - "_projects/**"
@@ -23,6 +24,7 @@ on:
       - "_config.yml"
       - "_data/**"
       - "_bibliography/**"
+      - "_news/**"
       - "_pages/**"
       - "_posts/**"
       - "_projects/**"
@@ -56,19 +58,30 @@ jobs:
           node-version: "20"
           cache: "npm"
 
+      - name: Setup Python 🐍
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
       - name: Install JS deps 📦
         run: npm ci
 
-      - name: Prepare baseline worktree (v0.16.3) 🧱
+      - name: Prepare baseline from the target branch 🧱
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
         run: |
-          git worktree add ../al-folio-baseline v0.16.3
-          (cd ../al-folio-baseline && bundle install && npm ci)
+          set -euo pipefail
+          if [ -z "$BASE_SHA" ] || [[ "$BASE_SHA" =~ ^0+$ ]]; then
+            BASE_SHA="$(git rev-parse HEAD^)"
+          fi
+          git worktree add --detach ../al-folio-baseline "$BASE_SHA"
+          (cd ../al-folio-baseline && bundle install)
 
       - name: Install Jupyter + ImageMagick runtime deps 🧰
         run: |
           sudo apt-get update
-          sudo apt-get install -y imagemagick python3-pip
-          pip3 install --user jupyter nbconvert
+          sudo apt-get install -y imagemagick
+          pip3 install --upgrade jupyter nbconvert
 
       - name: Install Playwright browser 🧪
         run: npx playwright install --with-deps chromium webkit
