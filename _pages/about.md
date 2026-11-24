@@ -13,7 +13,7 @@ profile:
     <p>Hong Kong SAR, China</p>
     <p>Email: <a href="mailto:jpxu.phd@outlook.com">jpxu.phd@outlook.com</a></p>
 
-selected_papers: true
+selected_papers: false
 social: true
 
 announcements:
