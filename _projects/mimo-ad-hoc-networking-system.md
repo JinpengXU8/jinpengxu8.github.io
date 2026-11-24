@@ -12,7 +12,6 @@ related_publications: true
 
 This project develops a low-altitude MIMO ad-hoc networking system for infrastructure-free, self-organizing, and multi-hop wireless communications. Featuring decentralized control and autonomous coordination, the system integrates MIMO transmission, dynamic topology management, opportunistic channel access, on-demand bandwidth allocation, and real-time hardware implementation.
 
-
 The project demonstrates the overall networking architecture, prototype communication devices, technical specifications, and field-test results.
 
 ---
@@ -62,6 +61,7 @@ The system was implemented using software-defined radio (SDR), ARM, and FPGA-bas
     <p class="caption text-center">
       Prototype communication devices and command-and-control terminal.
     </p>
+
   </div>
 
   <div class="col-lg-10 mx-auto mt-4">
@@ -75,25 +75,26 @@ The system was implemented using software-defined radio (SDR), ARM, and FPGA-bas
       UAV MIMO ad-hoc networking scenario with airborne nodes, ground nodes,
       and the command-and-control terminal.
     </p>
+
   </div>
 </div>
 
 ### Technical Specifications
 
-| Specification | Value |
-|---|---|
-| MIMO modes | Spatial multiplexing, space–time coding, receive combining, and Tx/Rx beamforming |
-| Receiver sensitivity | −99 dBm at 5 MHz bandwidth |
-| Adaptive data rate | 1–130+ Mbps |
-| Frequency range | 1300–1430 MHz (customizable) |
-| Channel bandwidth | 1.25 / 2.5 / 5 / 10 / 20 MHz (configurable) |
-| Modulation | TD-COFDM; adaptive BPSK/QPSK/16QAM/64QAM |
-| Single-hop range | ≥100 km (LoS); 1–30 km in urban environments |
-| Transmit power | 1 mW–2 W |
-| Operation modes | P2P, P2MP, multi-hop relay, and mesh networking |
-| Single-hop latency | Average ≈3 ms at 20 MHz bandwidth |
+| Specification             | Value                                                                                 |
+| ------------------------- | ------------------------------------------------------------------------------------- |
+| MIMO modes                | Spatial multiplexing, space–time coding, receive combining, and Tx/Rx beamforming     |
+| Receiver sensitivity      | −99 dBm at 5 MHz bandwidth                                                            |
+| Adaptive data rate        | 1–130+ Mbps                                                                           |
+| Frequency range           | 1300–1430 MHz (customizable)                                                          |
+| Channel bandwidth         | 1.25 / 2.5 / 5 / 10 / 20 MHz (configurable)                                           |
+| Modulation                | TD-COFDM; adaptive BPSK/QPSK/16QAM/64QAM                                              |
+| Single-hop range          | ≥100 km (LoS); 1–30 km in urban environments                                          |
+| Transmit power            | 1 mW–2 W                                                                              |
+| Operation modes           | P2P, P2MP, multi-hop relay, and mesh networking                                       |
+| Single-hop latency        | Average ≈3 ms at 20 MHz bandwidth                                                     |
 | Anti-jamming capabilities | Automatic/manual hopping, intelligent channel selection, and network-level mitigation |
-| Networking scale | More than 1,000 nodes |
+| Networking scale          | More than 1,000 nodes                                                                 |
 
 The reported technical specifications are based on prototype implementation and field measurements.
 
