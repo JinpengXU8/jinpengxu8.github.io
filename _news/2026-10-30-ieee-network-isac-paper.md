@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper “Rethinking ISAC in Low-Altitude Wireless Networks: Can It Operate Covertly?” has been accepted for publication in *IEEE Network*.
+Our paper “Rethinking ISAC in Low-Altitude Wireless Networks: Can It Operate Covertly?” has been accepted for publication in IEEE Network.
