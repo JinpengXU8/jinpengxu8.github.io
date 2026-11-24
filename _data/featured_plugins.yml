@@ -120,7 +120,7 @@
     al_folio_min: "1.0.0"
     al_folio_max: "1.x"
   status: bundled
-  demo_path: /blog/2024/photo-gallery/
+  demo_path: /projects/mimo-ad-hoc-networking-system/
   maintainer_contact: https://github.com/al-org-dev
   notes: Image tooling, gallery, and lightbox behavior.
 
