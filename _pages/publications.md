@@ -15,10 +15,20 @@ nav_order: 2
 
 <h2>Journal Papers</h2>
 
-{% bibliography --query @article %}
+{% bibliography --query @article[status!=under-review&&status!=submitted] %}
 
 <h2>Conference Papers</h2>
 
 {% bibliography --query @inproceedings %}
+
+<h2>Under Review</h2>
+
+{% bibliography --query @*[status=under-review] %}
+
+{% bibliography --query @*[status=submitted] %}
+
+<h2>Working Papers</h2>
+
+{% bibliography --query @*[status=working-paper] %}
 
 </div>
