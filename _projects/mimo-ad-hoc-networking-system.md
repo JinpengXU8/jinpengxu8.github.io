@@ -2,7 +2,7 @@
 layout: page
 title: Low-Altitude UAV MIMO Ad-Hoc Networking System
 description: Architecture, prototype devices, and field demonstrations of a low-altitude UAV MIMO ad-hoc networking system.
-img: assets/img/projects/uav-mimo-ad-hoc/cover.jpg
+img: assets/img/projects/uav-mimo-ad-hoc/system-architecture2.png
 importance: 1
 category: research
 related_publications: true
@@ -107,6 +107,8 @@ multi-node connectivity, wireless coverage, multi-hop transmission,
 communication reliability, and system operation under realistic
 deployment conditions.
 
+{% assign field_test_image = site.static_files | where: "path", "/assets/img/projects/uav-mimo-ad-hoc/field-test.jpg" | first %}
+{% if field_test_image %}
 {% include figure.liquid
   path="assets/img/projects/uav-mimo-ad-hoc/field-test.jpg"
   title="Field test of the UAV MIMO ad-hoc networking system"
@@ -116,6 +118,11 @@ deployment conditions.
 <p class="caption text-center">
   Field test of the low-altitude UAV MIMO ad-hoc networking system.
 </p>
+{% endif %}
+
+{% assign demo_video = site.static_files | where: "path", "/assets/video/uav-mimo-ad-hoc-demo.mp4" | first %}
+{% assign video_cover = site.static_files | where: "path", "/assets/img/projects/uav-mimo-ad-hoc/video-cover.jpg" | first %}
+{% if demo_video %}
 
 ### Demonstration Video
 
@@ -125,7 +132,7 @@ deployment conditions.
     controls
     playsinline
     preload="metadata"
-    poster="{{ '/assets/img/projects/uav-mimo-ad-hoc/video-cover.jpg' | relative_url }}"
+    {% if video_cover %}poster="{{ video_cover.path | relative_url }}"{% endif %}
   >
     <source
       src="{{ '/assets/video/uav-mimo-ad-hoc-demo.mp4' | relative_url }}"
@@ -139,3 +146,4 @@ deployment conditions.
     and wireless data transmission.
   </p>
 </div>
+{% endif %}

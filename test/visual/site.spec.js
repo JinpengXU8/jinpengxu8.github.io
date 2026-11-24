@@ -60,6 +60,9 @@ for (const theme of ["light", "dark"]) {
       }
       if (entry.path.endsWith("/projects/")) {
         await expect(page.locator(".projects .card").first()).toBeVisible();
+        const cover = page.locator(".projects .card img").first();
+        await expect(cover).toBeVisible();
+        await expect.poll(() => cover.evaluate((image) => image.complete && image.naturalWidth > 0)).toBe(true);
       }
 
       const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
@@ -68,6 +71,20 @@ for (const theme of ["light", "dark"]) {
     });
   }
 }
+
+test("project details and available images load", async ({ page }) => {
+  await preparePage(page, "light");
+  const response = await page.goto("/al-folio/projects/mimo-ad-hoc-networking-system/", { waitUntil: "networkidle" });
+  expect(response.ok()).toBeTruthy();
+  await expect(page.getByRole("heading", { name: "3. Field Tests and Demonstration", exact: true })).toBeVisible();
+
+  const images = page.locator(".post img");
+  expect(await images.count()).toBeGreaterThan(0);
+  for (const image of await images.all()) {
+    await image.scrollIntoViewIfNeeded();
+    await expect.poll(() => image.evaluate((element) => element.complete && element.naturalWidth > 0)).toBe(true);
+  }
+});
 
 test("mobile navigation opens and closes", async ({ page }, testInfo) => {
   test.skip(testInfo.project.name !== "mobile", "mobile navigation only");

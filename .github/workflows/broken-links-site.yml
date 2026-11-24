@@ -1,14 +1,28 @@
 name: Check for broken links on site
 
 on:
+  pull_request:
+    branches: [main, master]
+    paths:
+      - "_config.yml"
+      - "_data/**"
+      - "_bibliography/**"
+      - "_news/**"
+      - "_pages/**"
+      - "_posts/**"
+      - "_projects/**"
+      - "assets/**"
+      - "Gemfile"
+      - "Gemfile.lock"
+      - ".github/workflows/broken-links-site.yml"
   workflow_run:
     workflows: [Deploy site]
     types: [completed]
 
 jobs:
   check-links-on-site:
-    # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#running-a-workflow-based-on-the-conclusion-of-another-workflow
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    # Pull requests check their own build; deployment checks run after successful non-PR deployments.
+    if: ${{ github.event_name == 'pull_request' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event != 'pull_request') }}
     # available images: https://github.com/actions/runner-images#available-images
     runs-on: ubuntu-latest
     steps:
